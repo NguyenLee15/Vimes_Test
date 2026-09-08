@@ -1,0 +1,16 @@
+{
+  "name": "vimes-inventory-receipt",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run start:dev --workspace=@vimes/api",
+    "dev:web": "npm run dev --workspace=@vimes/web",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "test:integration": "npm run test:integration --workspace=@vimes/api",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  }
+}
