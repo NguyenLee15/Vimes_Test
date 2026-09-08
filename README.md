@@ -138,7 +138,7 @@ Next.js UI → Nest Controller / DTO → DocumentsService (Facade)
 - `apps/api/src/infrastructure`: Adapter thao tác PostgreSQL, quản lý transaction nguyên tử và khóa bi quan (`SELECT ... FOR UPDATE`).
 - `apps/api/src/documents`: Controller / DTO / Service facade tầng NestJS.
 
-Chi tiết ranh giới các layer: [docs/clean-architecture.md](docs/clean-architecture.md). Ngôn ngữ miền nghiệp vụ: [CONTEXT.md](CONTEXT.md).
+Chi tiết ngôn ngữ miền nghiệp vụ dùng chung: [CONTEXT.md](CONTEXT.md).
 
 ---
 
@@ -230,8 +230,6 @@ vimes-inventory/
 ├── database/                               # Các tệp Migration & Seed data tự động
 │   ├── 001_init.sql                        # Schema, ràng buộc và index
 │   └── 002_seed_data.sql                   # 10 mặt hàng, 2 phiếu nhập, 1 phiếu xuất
-├── docs/
-│   └── clean-architecture.md               # Phân tích chi tiết ranh giới kiến trúc
 ├── docker-compose.yml                      # Cấu hình khởi chạy 3 containers (Web, API, DB)
 ├── CONTEXT.md                              # Ubiquitous Language & quy ước nghiệp vụ
 └── README.md
